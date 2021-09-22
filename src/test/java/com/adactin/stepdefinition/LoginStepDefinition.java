@@ -2,6 +2,7 @@ package com.adactin.stepdefinition;
 
 
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 import com.adactin.base.Base_Class;
@@ -95,7 +96,9 @@ public class LoginStepDefinition extends Base_Class{
 	@Then("^user validate the username and password$")
 	public void user_validate_the_username_and_password() throws Throwable {
 	    
-		//Assert.assertEquals("abd","abcd");
+		String title = driver.getTitle();
+		
+		Assert.assertEquals(title, "Adactin.com - Search Hotel");
 	}
 
 

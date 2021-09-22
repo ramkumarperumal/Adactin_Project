@@ -23,11 +23,12 @@ import io.cucumber.junit.CucumberOptions;
 				//features = "@target\\failedrun.txt"	,
 				glue = "com\\adactin\\stepdefinition", monochrome = true,
 				plugin = {"pretty",
-						  // "com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport.html",
+						  //"com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport.html",
 						   "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-						   "rerun:target\\failedrun.txt"})
+						   //"rerun:target\\failedrun.txt"
 						 //  "json:target/jsonreport.json",
-						//   "html:target/htmlreport"})
+						//   "html:target/htmlreport"
+						  })
 
 public class AdactinRunner {
 

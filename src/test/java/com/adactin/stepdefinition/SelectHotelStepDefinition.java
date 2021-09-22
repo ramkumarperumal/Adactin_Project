@@ -1,5 +1,6 @@
 package com.adactin.stepdefinition;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 import com.adactin.base.Base_Class;
@@ -34,6 +35,8 @@ public class SelectHotelStepDefinition extends Base_Class{
 	@Then("^user validate the selection of hotel$")
 	public void user_validate_the_selection_of_hotel() throws Throwable {
 	  
+		String title = driver.getTitle();
+		Assert.assertEquals(title, "Adactin.com - Book A Hotel");
 	
 }
 	

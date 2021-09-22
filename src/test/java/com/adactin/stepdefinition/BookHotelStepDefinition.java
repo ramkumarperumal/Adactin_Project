@@ -1,5 +1,6 @@
 package com.adactin.stepdefinition;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 import com.adactin.base.Base_Class;
@@ -81,6 +82,6 @@ public class BookHotelStepDefinition extends Base_Class {
 
 	@Then("^user validate the booking of hotel$")
 	public void user_validate_the_booking_of_hotel() throws Throwable {
-	    
+
 	}
 }
